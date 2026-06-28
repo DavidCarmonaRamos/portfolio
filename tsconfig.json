@@ -1,22 +1,37 @@
 {
-  "extends": "astro/tsconfigs/strict",
-  "compilerOptions": {
-    "ignoreDeprecations": "6.0",
-    "baseUrl": ".",
-    "paths": {
-      "@/*": ["src/*"],
-      "@components/*": ["src/components/*"],
-      "@layouts/*": ["src/layouts/*"],
-      "@lib/*": ["src/lib/*"],
-      "@styles/*": ["src/styles/*"],
-      "@consts": ["src/consts.ts"],
-      "@types": ["src/types.ts"]
-    },
-    "jsx": "preserve",
-    "jsxImportSource": "solid-js"
-  },
-  "include": [
-    ".astro/types.d.ts",
-    "**/*"
-  ]
+	"extends": "astro/tsconfigs/strict",
+	"compilerOptions": {
+		"ignoreDeprecations": "6.0",
+		"baseUrl": ".",
+		"paths": {
+			"@/*": [
+				"src/*"
+			],
+			"@components/*": [
+				"src/components/*"
+			],
+			"@layouts/*": [
+				"src/layouts/*"
+			],
+			"@lib/*": [
+				"src/lib/*"
+			],
+			"@styles/*": [
+				"src/styles/*"
+			],
+			"@consts": [
+				"src/consts.ts"
+			],
+			"@types": [
+				"src/types.ts"
+			]
+		},
+		"jsx": "preserve",
+		"jsxImportSource": "solid-js"
+	},
+	"include": [
+		".astro/types.d.ts",
+		"**/*",
+		"./worker-configuration.d.ts"
+	]
 }
