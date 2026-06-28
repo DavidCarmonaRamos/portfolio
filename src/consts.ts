@@ -3,26 +3,20 @@ import type { Site, Page, Links, Socials } from "@types"
 // Global
 export const SITE: Site = {
   TITLE: "David Carmona Ramos",
-  DESCRIPTION: "Portfolio de David Carmona Ramos, Técnico en Sistemas Microinformáticos y Redes, desarrollador web y apasionado del mundo de los videojuegos.",
+  DESCRIPTION:"Portfolio de David Carmona Ramos. Técnico en Sistemas Microinformáticos y Redes, desarrollador web y apasionado por la tecnología, la administración de sistemas y el desarrollo de aplicaciones.",
   AUTHOR: "David Carmona Ramos",
 }
 
 // Work Page
 export const WORK: Page = {
   TITLE: "Experiencia",
-  DESCRIPTION: "Experiencia profesional y formación.",
-}
-
-// Blog Page
-export const BLOG: Page = {
-  TITLE: "Blog",
-  DESCRIPTION: "Artículos sobre desarrollo, tecnología y proyectos personales.",
+  DESCRIPTION: "Trayectoria profesional, formación académica y conocimientos técnicos.",
 }
 
 // Projects Page
 export const PROJECTS: Page = {
   TITLE: "Proyectos",
-  DESCRIPTION: "Una selección de los proyectos en los que he trabajado.",
+  DESCRIPTION: "Proyectos personales y profesionales desarrollados con distintas tecnologías.",
 }
 
 // Search Page
@@ -44,6 +38,10 @@ export const LINKS: Links = [
     TEXT: "Proyectos",
     HREF: "/projects",
   },
+  {
+    TEXT: "Contacto",
+    HREF: "/contact",
+  },
 ]
 
 // Socials
@@ -63,14 +61,14 @@ export const SOCIALS: Socials = [
   { 
     NAME: "LinkedIn",
     ICON: "linkedin",
-    TEXT: "markhorn-dev",
-    HREF: "https://www.linkedin.com/in/markhorn-dev/",
+    TEXT: "David Carmona Ramos",
+    HREF: "https://www.linkedin.com/in/david-carmona-ramos-bb4a71143/",
   },
-  { 
-    NAME: "Twitter",
-    ICON: "twitter-x",
-    TEXT: "markhorn_dev",
-    HREF: "https://twitter.com/markhorn_dev",
-  },
+  {
+    NAME: "CV",
+    ICON: "download",
+    TEXT: "Currículum",
+    HREF: "/cv.pdf",
+  }
 ]
 
