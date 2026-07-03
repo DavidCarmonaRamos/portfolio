@@ -37,7 +37,33 @@ const stack = [
     text: "Astro",
     icon: "astro",
     href: "https://astro.build/",
-  }
+  },
+  {
+    text: "Node.js",
+    icon: "nodejs",
+    href: "https://nodejs.org/",
+  },
+  {
+    text: "React",
+    icon: "react",
+    href: "https://react.dev/",
+  },
+  {
+    text: "Tailwind CSS",
+    icon: "tailwindcss",
+    href: "https://tailwindcss.com/",
+  },
+  {
+    text: "Git",
+    icon: "git",
+    href: "https://git-scm.com/",
+  },
+  {
+    text: "GitHub",
+    icon: "github",
+    href: "https://github.com/",
+  },
+  
 ]
 ---
 
@@ -168,24 +194,109 @@ const stack = [
 
         </div>
       </section>
-      <!-- Tech Stack Section -->
+      <!-- Stack tecnológico -->
       <section class="animate">
-        <div class="space-y-4">
-          <p class="font-semibold text-black dark:text-white">
-            Tecnologías
-          </p>
-          <div class="flex flex-wrap items-center gap-2 mt-5">
-            {stack.map(item => (
-              <StackCard 
-                text={item.text}
-                icon={item.icon}
-                href={item.href}
-              />
-            ))}
+        <div class="space-y-8">
+
+          <div>
+            <h2 class="text-2xl font-bold text-black dark:text-white">
+              Stack tecnológico
+            </h2>
+
+            <p class="mt-2 text-neutral-600 dark:text-neutral-400">
+              Estas son las principales tecnologías y herramientas con las que desarrollo
+              mis proyectos y continúo ampliando mis conocimientos.
+            </p>
           </div>
+
+          <!-- Lenguajes -->
+          <div>
+            <h3 class="text-sm uppercase tracking-wider font-semibold text-neutral-500 mb-3">
+              Lenguajes
+            </h3>
+
+            <div class="flex flex-wrap gap-2">
+              {stack.map(item => (
+                <StackCard
+                  text={item.text}
+                  icon={item.icon}
+                  href={item.href}
+                />
+              ))}
+            </div>
+          </div>
+
+          <!-- Frameworks -->
+          <div>
+            <h3 class="text-sm uppercase tracking-wider font-semibold text-neutral-500 mb-3">
+              Frameworks
+            </h3>
+
+            <div class="flex flex-wrap gap-2">
+
+              <StackCard
+                text="Astro"
+                icon="astro"
+                href="https://astro.build"
+              />
+
+            </div>
+          </div>
+
+          <!-- Herramientas -->
+          <div>
+            <h3 class="text-sm uppercase tracking-wider font-semibold text-neutral-500 mb-3">
+              Herramientas
+            </h3>
+
+            <div class="flex flex-wrap gap-2">
+
+              <StackCard
+                text="Git"
+                icon="git"
+                href="https://git-scm.com/"
+              />
+
+              <StackCard
+                text="GitHub"
+                icon="github"
+                href="https://github.com/DavidCarmonaRamos"
+              />
+
+              <StackCard
+                text="VS Code"
+                icon="vscode"
+                href="https://code.visualstudio.com/"
+              />
+
+            </div>
+          </div>
+
+          <!-- Sistemas -->
+          <div>
+            <h3 class="text-sm uppercase tracking-wider font-semibold text-neutral-500 mb-3">
+              Sistemas
+            </h3>
+
+            <div class="flex flex-wrap gap-2">
+
+              <StackCard
+                text="Windows"
+                icon="windows"
+                href="https://www.microsoft.com/windows"
+              />
+
+              <StackCard
+                text="Linux"
+                icon="linux"
+                href="https://kernel.org/"
+              />
+
+            </div>
+          </div>
+
         </div>
       </section>
-
       <!-- Project Preview Section -->
       <section class="animate">
         <div class="space-y-4">
