@@ -1,0 +1,31 @@
+---
+import {
+  Github,
+  Linkedin,
+  Mail,
+  Download,
+  Code2,
+  FileCode2,
+  Braces,
+  Globe
+} from "@lucide/astro";
+
+const { name, size = 20 } = Astro.props;
+
+const icons = {
+  github: Github,
+  linkedin: Linkedin,
+  email: Mail,
+  download: Download,
+
+  html: Globe,
+  css: FileCode2,
+  javascript: Braces,
+  typescript: Code2,
+  astro: Code2,
+};
+
+const Icon = icons[name];
+---
+
+{Icon && <Icon size={size} />}
