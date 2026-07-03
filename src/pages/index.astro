@@ -7,11 +7,6 @@ import { SITE, SOCIALS } from "@consts"
 import TwinklingStars from "@components/TwinklingStars.astro"
 import MeteorShower from "@components/MeteorShower.astro"
 
-const posts = (await getCollection("blog"))
-  .filter(post => !post.data.draft)
-  .sort((a, b) => b.data.date.getTime() - a.data.date.getTime())
-  .slice(0,3)
-
 const projects = (await getCollection("projects"))
   .filter(project => !project.data.draft)
   .sort((a, b) => b.data.date.getTime() - a.data.date.getTime())
@@ -92,18 +87,13 @@ const stack = [
             <a href="/projects" class='py-3 px-6 rounded bg-black dark:bg-white text-white dark:text-black hover:opacity-80 blend'>
               Ver proyectos
             </a>
+            <a href='/work' class='py-3 px-4 truncate rounded text-xs md:text-sm lg:text-base border border-black/25 dark:border-white/25 hover:bg-black/5 hover:dark:bg-white/15 blend'>
+              Experiencia
+            </a>
             <a href="/cv.pdf" class='py-3 px-6 rounded border border-black/25 dark:border-white/25 hover:bg-black/5 hover:dark:bg-white/10 blend'>
               Descargar CV
             </a>
-            <a href='/work' class='py-3 px-4 truncate rounded text-xs md:text-sm lg:text-base border border-black/25 dark:border-white/25 hover:bg-black/5 hover:dark:bg-white/15 blend'>
-              Ver mi experiencia
-            </a>
           </div>
-            <!--
-            <a href='/blog' class='py-2 px-4 rounded truncate text-xs md:text-sm lg:text-base bg-black dark:bg-white text-white dark:text-black hover:opacity-75 blend'>
-              Read my blog
-            </a>
-            -->
         </div>
       </div>
     </div>
@@ -115,13 +105,71 @@ const stack = [
       <!-- About Section -->
       <section class="animate">
         <article>
-          <h2> Sobre mí </h2>
+          <h2 class="text-2xl font-bold text-black dark:text-white mb-6">
+              Sobre mí
+          </h2>
           <p>Soy Técnico en Sistemas Microinformáticos y Redes con interés en el desarrollo web, la administración de sistemas y la creación de aplicaciones.</p>
+          <article class="space-y-5"></article>
           <p>Me gusta aprender nuevas tecnologías y afrontar proyectos que me permitan seguir creciendo profesionalmente. Actualmente desarrollo proyectos personales para ampliar mis conocimientos y construir un portfolio que refleje mi evolución como desarrollador.</p>
+          <article class="space-y-5"></article>
           <p>Actualmente estoy ampliando mis conocimientos en desarrollo web moderno, con especial interés en Astro, TypeScript y el desarrollo de aplicaciones escalables.</p>
         </article>
       </section>
+      <!-- Especialidades -->
+      <section class="animate">
+        <h2 class="text-2xl font-bold text-black dark:text-white mb-8">
+          Especialidades
+        </h2>
 
+        <div class="grid gap-6 md:grid-cols-3">
+
+          <!-- Desarrollo Web -->
+          <article class="rounded-xl border border-black/10 dark:border-white/10 p-6">
+            <div class="text-4xl mb-4">
+              💻
+            </div>
+
+            <h3 class="text-lg font-semibold mb-3 text-black dark:text-white">
+              Desarrollo Web
+            </h3>
+
+            <p class="text-sm opacity-80 leading-relaxed">
+              Desarrollo páginas web y aplicaciones modernas utilizando HTML, CSS, JavaScript, TypeScript y Astro.
+            </p>
+          </article>
+
+          <!-- Sistemas -->
+          <article class="rounded-xl border border-black/10 dark:border-white/10 p-6">
+            <div class="text-4xl mb-4">
+              🖥️
+            </div>
+
+            <h3 class="text-lg font-semibold mb-3 text-black dark:text-white">
+              Sistemas y Redes
+            </h3>
+
+            <p class="text-sm opacity-80 leading-relaxed">
+              Administración y mantenimiento de sistemas Windows y Linux, resolución de incidencias y soporte técnico.
+            </p>
+          </article>
+
+          <!-- Aprendizaje -->
+          <article class="rounded-xl border border-black/10 dark:border-white/10 p-6">
+            <div class="text-4xl mb-4">
+              📚
+            </div>
+
+            <h3 class="text-lg font-semibold mb-3 text-black dark:text-white">
+              Aprendizaje Continuo
+            </h3>
+
+            <p class="text-sm opacity-80 leading-relaxed">
+              Siempre aprendiendo nuevas tecnologías y desarrollando proyectos personales para seguir creciendo profesionalmente.
+            </p>
+          </article>
+
+        </div>
+      </section>
       <!-- Tech Stack Section -->
       <section class="animate">
         <div class="space-y-4">
@@ -136,10 +184,6 @@ const stack = [
                 href={item.href}
               />
             ))}
-          </div>
-          <div>
-            <a href="https://www.solidjs.com/" target="_blank" class="w-fit group underline decoration-[.5px] decoration-black/25 dark:decoration-white/50 hover:decoration-black dark:hover:decoration-white text-black dark:text-white underline-offset-2 blend">
-            </a>
           </div>
         </div>
       </section>
