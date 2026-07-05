@@ -18,13 +18,8 @@ const work = await Promise.all(
 
 function formatWorkDate(input: Date | string) {
   if (typeof input === "string") return input
-
-  const month = input.toLocaleDateString("en-US", {
-    month: "short",
-  })
-
   const year = new Date(input).getFullYear()
-  return `${month} ${year}`
+  return `${year}`
 }
 ---
 
@@ -33,6 +28,7 @@ function formatWorkDate(input: Date | string) {
     <div class="animate page-heading">
       {WORK.TITLE}
     </div>
+    <div class="animate">Mi trayectoria profesional, formación y proyectos personales que reflejan mi evolución en el desarrollo web y la administración de sistemas.</div>
   </TopLayout>
   <BottomLayout>
     <ul>

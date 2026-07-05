@@ -1,0 +1,12 @@
+---
+const { name, sprite = "ui", size = 20 } = Astro.props;
+---
+
+<svg
+  width={size}
+  height={size}
+  class="fill-none stroke-current"
+  aria-hidden="true"
+>
+  <use href={`/${sprite}.svg#${name}`} />
+</svg>
