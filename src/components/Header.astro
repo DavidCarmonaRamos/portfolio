@@ -1,3 +1,11 @@
+---
+import { SITE, LINKS } from "@consts"
+import { cn } from "@lib/utils"
+const { pathname } = Astro.url
+const subpath = pathname.match(/[^/]+/g)
+import Container from "@components/Container.astro"
+---
+
 <header id="header" class="fixed top-0 w-full h-16 z-50">
   <Container size="md">
     <div class="flex items-center justify-between h-full">
