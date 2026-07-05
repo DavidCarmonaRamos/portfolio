@@ -7,7 +7,7 @@ import Container from "@components/Container.astro"
 ---
 
 <header id="header" class="fixed top-0 w-full h-16 z-50">
-  <Container size="md">
+  <Container size="lg">
     <div class="flex items-center justify-between h-full">
 
       <!-- Logo + Nombre + Menú -->
@@ -59,7 +59,7 @@ import Container from "@components/Container.astro"
               : ""
           )}
         >
-          <svg class="size-full">
+          <svg class="size-full fill-none stroke-current">
             <use href="/ui.svg#search"></use>
           </svg>
         </a>
@@ -70,7 +70,7 @@ import Container from "@components/Container.astro"
           aria-label="RSS"
           class="hidden md:flex size-9 rounded-full p-2 items-center justify-center border border-black/10 dark:border-white/25 hover:bg-black/5 dark:hover:bg-white/20 transition-colors"
         >
-          <svg class="size-full">
+          <svg class="size-full fill-none stroke-current">
             <use href="/ui.svg#rss"></use>
           </svg>
         </a>
@@ -80,11 +80,11 @@ import Container from "@components/Container.astro"
           aria-label="Cambiar tema"
           class="hidden md:flex size-9 rounded-full p-2 items-center justify-center border border-black/10 dark:border-white/25 hover:bg-black/5 dark:hover:bg-white/20 transition-colors"
         >
-          <svg class="size-full block dark:hidden">
+         <svg class="size-full fill-none stroke-current block dark:hidden">
             <use href="/ui.svg#sun"></use>
           </svg>
 
-          <svg class="size-full hidden dark:block">
+          <svg class="size-full fill-none stroke-current hidden dark:block">
             <use href="/ui.svg#moon"></use>
           </svg>
         </button>

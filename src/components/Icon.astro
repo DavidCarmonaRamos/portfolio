@@ -1,0 +1,47 @@
+---
+import {
+  Mail,
+  Download,
+  Search,
+  Menu,
+  X,
+  Phone,
+  MapPin,
+  User,
+  Briefcase,
+  ArrowRight,
+  Git,
+  React,  Globe,
+  FileCode2,
+  Braces,
+  Code2,
+  GitBranch,
+  Github,
+  Monitor,
+  Laptop,
+  Wind,
+  Atom
+} from "@lucide/astro";
+
+const { name, size = 20 } = Astro.props;
+
+const icons = {
+  email: Mail,
+  download: Download,
+  search: Search,
+  menu: Menu,
+  close: X,
+  phone: Phone,
+  location: MapPin,
+  user: User,
+  work: Briefcase,
+  arrow: ArrowRight,
+  git: Git,
+  github: GitHub,
+  react: React,
+} as const;
+
+const Icon = icons[name as keyof typeof icons];
+---
+
+{Icon && <Icon size={size} />}
