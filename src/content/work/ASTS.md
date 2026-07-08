@@ -1,12 +1,12 @@
 ---
-company: "ASTS"
 role: "Técnico Informático"
+company: "ASTS"
 dateStart: "2022"
 dateEnd: "2026"
 ---
 
-Desarrollé tareas de soporte técnico y mantenimiento informático, incluyendo el diagnóstico y la resolución de incidencias, la configuración de equipos, sistemas operativos y periféricos, así como el despliegue de equipos corporativos y la asistencia técnica presencial y remota a los usuarios.
+Desempeñé funciones de soporte técnico y administración de sistemas, proporcionando asistencia a usuarios, preparando equipos corporativos y resolviendo incidencias de hardware y software en el entorno empresarial.
 
 - Instalación, configuración y mantenimiento de equipos y sistemas informáticos.
-- Soporte técnico presencial y remoto (HelpDesk), resolviendo incidencias de hardware y software.
-- Preparación y despliegue de equipos corporativos, configuración de periféricos y soporte a los usuarios.
+- Soporte técnico presencial y remoto mediante plataforma HelpDesk.
+- Preparación y despliegue de equipos corporativos, configuración de periféricos y asistencia a usuarios.
