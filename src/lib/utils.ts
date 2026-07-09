@@ -6,11 +6,7 @@ export function cn(...inputs: ClassValue[]) {
 }
 
 export function formatDate(date: Date) {
-  return Intl.DateTimeFormat("en-US", {
-    month: "short",
-    day: "2-digit",
-    year: "numeric"
-  }).format(date)
+  return date.getFullYear().toString()
 }
 
 export function readingTime(html: string) {

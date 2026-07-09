@@ -1,6 +1,6 @@
 ---
-title: "Proyecto 1"
-summary: "Página Portfolio"
+title: "Página Portfolio"
+summary: "Portfolio profesional desarrollado con Astro para presentar mi trayectoria, experiencia y proyectos personales."
 date: "2026"
 draft: false
 tags:
@@ -15,10 +15,25 @@ tags:
 - Cloudflare Pages
 
 demoUrl: https://davidcarmonaramos.es
-repoUrl: https://github.com/markhorn-dev/astro-sphere
+repoUrl: https://github.com/DavidCarmonaRamos/portfolio
 ---
+
+## Descripción
 
 Desarrollo de un portfolio web como proyecto personal con el objetivo de consolidar mis conocimientos en desarrollo frontend y crear una plataforma donde presentar mi trayectoria profesional, experiencia y proyectos. La aplicación está desarrollada con Astro, TypeScript y Tailwind CSS, siguiendo un proceso de mejora continua y aplicando buenas prácticas de organización del código, diseño responsive y optimización del rendimiento.
 
 Entre sus principales características se encuentran el despliegue automático mediante GitHub y Cloudflare Pages, la personalización completa de la interfaz a partir de una plantilla inicial y la implementación de componentes reutilizables para facilitar su mantenimiento y evolución.
 
+## ¿Qué aprendí?
+
+- Arquitectura de Astro.
+- Componentes reutilizables.
+- Tailwind CSS.
+- Cloudflare Pages.
+
+## Retos encontrados
+
+- Sustitución del sistema de iconos.
+- Reestructuración completa del Header.
+- Eliminación del código heredado de la plantilla.
+- Adaptación del diseño a un portfolio propio.
